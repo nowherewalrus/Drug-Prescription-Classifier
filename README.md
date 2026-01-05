@@ -224,8 +224,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - https://www.linkedin.com/in/parsa-khaghani-a22847326/
 
-Project Link: [https://github.com/yourusername/drug-prescription-classifier](https://github.com/yourusername/drug-prescription-classifier)
-
+Project Link: https://github.com/nowherewalrus/Drug-Prescription-Classifier.git
 ## 🙏 Acknowledgments
 
 - Dataset providers and medical researchers
