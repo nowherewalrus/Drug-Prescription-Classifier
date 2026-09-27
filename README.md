@@ -131,15 +131,7 @@ drug-prescription-classifier/
 ├── drug_classifier.ipynb           # Main notebook
 ├── README.md                       # Documentation
 ├── requirements.txt                # Dependencies
-├── models/                         # Saved models
-│   ├── drug_tree_model.pkl
-│   └── scaler.pkl
-├── visuals/                        # Visualizations
-│   ├── decision_tree.png
-│   └── feature_importance.png
-└── reports/                        # Evaluation reports
-    ├── classification_report.txt
-    └── confusion_matrix.png
+
 ```
 
 ## 🔧 Customization
@@ -191,45 +183,11 @@ df['BMI'] = df['Weight'] / (df['Height'] ** 2)
 2. **Pharmacy Inventory**: Forecast drug demand
 3. **Telemedicine**: Automated preliminary recommendations
 
-## 🔄 Future Enhancements
-
-### **Planned Features**
-- [ ] **Web Application**: Streamlit/FastAPI interface
-- [ ] **Real-time Predictions**: API endpoint for predictions
-- [ ] **Additional Algorithms**: Compare with Random Forest, SVM, Neural Networks
-- [ ] **Feature Importance Visualization**: Interactive plots
-- [ ] **Patient Risk Profiles**: Comprehensive patient analysis
-
-### **Technical Improvements**
-- [ ] **Hyperparameter Tuning**: Optimize tree depth and parameters
-- [ ] **Cross-Validation**: K-fold cross-validation implementation
-- [ ] **Model Persistence**: Save/load model functionality
-- [ ] **Deployment**: Docker containerization
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## ✉️ Contact
 
 Your Name - https://www.linkedin.com/in/parsa-khaghani-a22847326/
 
 Project Link: https://github.com/nowherewalrus/Drug-Prescription-Classifier.git
-## 🙏 Acknowledgments
-
-- Dataset providers and medical researchers
-- Scikit-learn development team
-- Open source community contributors
 
 ## ⚠️ Medical Disclaimer
 
@@ -240,38 +198,6 @@ Project Link: https://github.com/nowherewalrus/Drug-Prescription-Classifier.git
 1. Scikit-learn Documentation: [Decision Trees](https://scikit-learn.org/stable/modules/tree.html)
 2. Medical Decision Support Systems
 3. Pharmaceutical Research Papers
-
-## 🚀 Quick Start
-
-### **For Basic Usage:**
-```python
-# Load and preprocess data
-df = pd.read_csv('drug200.csv')
-
-# Train model
-model = DecisionTreeClassifier(criterion='entropy', max_depth=4)
-model.fit(X_train, y_train)
-
-# Make prediction
-prediction = model.predict([patient_features])
-```
-
-### **For Production:**
-```python
-# Save model
-import joblib
-joblib.dump(model, 'drug_prescription_model.pkl')
-
-# Load and use
-loaded_model = joblib.load('drug_prescription_model.pkl')
-```
-
----
-
-**Note**: The warning about `numexpr` version is non-critical. To resolve:
-```bash
-pip install --upgrade numexpr
-```
 
 ---
 
